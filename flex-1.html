@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-1 Menu</title>
+
+    <style type="text/css">
+
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        ul, li, ol{list-style: none;}
+        a{text-decoration: none; color: inherit;}
+        body{background: lavender;}
+
+        .list01{
+            width: 1200px;
+            margin: 100px auto;
+            /* background-color: bisque; */
+            border: 1px solid saddlebrown;
+            display: flex;
+            justify-content: space-around;
+                /* ↑앞뒤사이공간 균등분배 */
+            justify-content: space-between;
+                /* ↑사이공간만 균등분배 */
+            /* justify-content: center; */
+        
+            height: 300px;
+            /* line-height: 100px; */
+            align-items: center; /* 꼬치가 한줄일때 중앙정렬은 align-items: ; */
+        }
+        
+        .list01 li{}
+        
+        .list01 li a{
+            display: block;
+            padding: 10px 50px;
+            background-color: lemonchiffon;
+            border-radius: 50px;
+            color: gray;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            transition: all 0.5s;
+            width: 200px;
+            height: 150px;
+            text-align: center;
+        }
+        
+        .list01 li a:hover{
+            color: #000;
+            background-color: yellow;
+        }
+        
+        
+
+        /* 배치순서바꾸기 */
+        .list01 li:nth-child(1){order: 2;}
+        .list01 li:nth-child(2){order: 3;}
+        .list01 li:nth-child(3){order: 5;}
+        .list01 li:nth-child(4){order: 4;}
+        .list01 li:nth-child(5){order: 1;}
+
+
+/* /////////////////////////////////////////////////////////////////////// */
+
+
+
+.list02{
+    width: 500px;
+    height: 600px;
+    border: gray dotted 1px;
+    margin: 100px auto;
+    
+    display: flex;
+    /* flex-wrap: wrap;
+    flex-wrap: nowrap; */
+    flex-direction: column; /* 플렉스 꼬치 방향 */ 
+    align-items: center; /* 전체 아이템 중앙정렬 */
+    
+    /* 꼬치방향 */
+    justify-content: flex-end; /* 끝단부터 플렉스 */
+    justify-content: center; /* 아이템간 간격없이 중앙정렬 */
+    justify-content: space-between; 
+    justify-content: space-around;
+}
+
+.list02 li{}
+
+.list02 li a{
+    display: block;
+    padding: 20px 30px;
+    box-shadow: 0 0 5px lightgray;
+    background-color: lavenderblush;
+    border-radius: 50px;
+    color: gray;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    width: 200px;
+}
+
+/* /////////////////////////////////////////////////////////////////////// */
+
+
+.list03{
+    width: 1000px;
+    height: 500px;
+    border: 1px dotted gray;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: space-between;
+            align-content: center; /* 꼬치가 2줄 이상일때는 align-content: ; */
+            
+        }
+        
+        .list03 li{}
+        
+        .list03 li a{
+            display: block;
+            width: 300px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            background-color: lightcyan;
+            box-shadow: 0 0 5px lightgray;
+            color: gray;
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            
+        }
+        
+        .warp{
+            width: 1200px;
+            margin: 0 auto;
+            font-size: 2rem;
+            font-weight: 900;
+            
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        header{
+            width: 100%;
+            height: 100px;
+            background-color: pink;
+            order: 1;
+        }
+
+        aside{
+            width: 30%;
+            height: 600px;
+            background-color: hotpink;
+            order: 3;
+        }
+        
+        section{
+            width: 70%;
+            background-color: deeppink;
+            order: 2;
+        }
+        
+        footer{
+            width: 100%;
+            background-color: crimson;
+            height: 100px;
+            order: 4;
+        }
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+
+
+
+
+
+
+</head>
+<body>
+    
+    <ul class="list01">
+        <li><a href="#">menu01</a></li>
+        <li><a href="#">menu02</a></li>
+        <li><a href="#">menu03</a></li>
+        <li><a href="#">menu04</a></li>
+        <li><a href="#">menu05</a></li>
+    </ul>
+    
+    <ul class="list02">
+        <li><a href="#">menu01</a></li>
+        <li><a href="#">menu02</a></li>
+        <li><a href="#">menu03</a></li>
+        <li><a href="#">menu04</a></li>
+        <li><a href="#">menu05</a></li>
+    </ul>
+    
+    <ul class="list03">
+        <li><a href="#">menu01</a></li>
+        <li><a href="#">menu02</a></li>
+        <li><a href="#">menu03</a></li>
+        <li><a href="#">menu04</a></li>
+        <li><a href="#">menu05</a></li>
+    </ul>
+
+
+    <div class="warp">
+        <header>Site Title</header>
+        <aside>Side Bar</aside>
+        <section>Body</section>
+        <footer>footer</footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

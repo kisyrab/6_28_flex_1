@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animals</title>
+
+
+    <style>
+
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        ul, li, ol{list-style: none;}
+        a{text-decoration: none; color: inherit;}
+        body{background-color: #031b0b;}
+
+
+        img{width: 100%;}
+
+        .wrap{
+            width: 1000px;
+            margin: 50px auto;
+            border: 5px solid white;
+            padding: 30px;
+        
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        
+/* 
+        .box{
+            filter: blur();
+            transition: all 0.3s;
+            }
+            
+        .box:hover{
+            transform: scale(1.2);
+        } */
+        
+        .box{
+            overflow: hidden;
+        }
+        .box img{
+            transition: all 0.3s;
+            filter: blur(2px);
+            filter: grayscale();
+            
+        }
+        
+        .box img:hover{
+            transform: scale(1.2);
+            filter: none;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="box ani1"><img src="img/animal01.png" alt="animal"></div>
+        <div class="box ani2"><img src="img/animal02.png" alt="animal"></div>
+        <div class="box ani3"><img src="img/animal03.png" alt="animal"></div>
+        <div class="box ani4"><img src="img/animal04.png" alt="animal"></div>
+        <div class="box ani5"><img src="img/animal05.png" alt="animal"></div>
+        <div class="box ani6"><img src="img/animal06.png" alt="animal"></div>
+        <div class="box ani7"><img src="img/animal07.png" alt="animal"></div>
+        <div class="box ani8"><img src="img/animal08.png" alt="animal"></div>
+        <div class="box ani9"><img src="img/animal09.png" alt="animal"></div>
+        <div class="box ani10"><img src="img/animal10.png" alt="animal"></div>
+        <div class="box ani11"><img src="img/animal11.png" alt="animal"></div>
+        <div class="box ani12"><img src="img/animal12.png" alt="animal"></div>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

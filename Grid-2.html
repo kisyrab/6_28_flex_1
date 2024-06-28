@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        ul, li, ol{list-style: none;}
+        a{text-decoration: none; color: inherit;}
+
+        .wrap{
+            margin: 50px;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 200px auto 200px;
+            
+            /* 그리드 이름을 먼저 명시 한 뒤, 몇 칸을 몇 번 채울지 기입 */
+            grid-template-areas: 
+            "header header header"
+            "side1 con side2"
+            "footer footer footer"
+            ;
+
+        }
+
+
+        .box{background-color: dodgerblue; border-radius: 50px; 
+            color: white; padding: 20px; font-weight: 900;
+            text-transform: uppercase;}
+
+        .header{
+            grid-area: header; /* 그리드 이름을 걸어줌 */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .logo{width: 100px; height: 50px; 
+                /* border: white solid 1px;  */
+                display: flex; 
+                justify-content: center; 
+                align-items: center;}
+
+                .logo a{}
+
+            .nav{}
+
+                .main{display: flex;}
+                    
+                    .main li{}
+                    
+                    .main li a{display: block; padding: 5px 10px;}
+
+
+        .side1{
+            grid-area: side1;
+        }
+        
+        .side2{
+            grid-area: side2;
+            
+        }
+        
+        .con{
+            grid-area: con;
+            text-transform: none;
+            
+        }
+        
+        .footer{
+            grid-area: footer;
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="box header">
+            <h1 class="logo"><a href="#">LOGO</a></h1>
+            <nav class="nav">
+                <ul class="main">
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a></li>
+                    <li><a href="#">menu3</a></li>
+                    <li><a href="#">menu4</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside class="box side1">side bar</aside>
+        
+        <section class="box con">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam alias et libero ipsa asperiores voluptate
+            sint numquam beatae officia nostrum laboriosam ducimus, laudantium quis optio dolorem voluptatum velit
+            deleniti. Quas!
+        </section>
+        
+        <aside class="box side2">side bar</aside>
+        
+        <footer class="box footer">footer</footer>
+
+    </div>
+</body>
+
+</html>
